@@ -4,7 +4,7 @@ name: Django CI/CD Pipeline
 on:
   push:
     branches:
-	    - main # main 브랜치에 push될 때 이 코드를 작동한다는 의미
+      - main
 
 jobs:
   deploy:

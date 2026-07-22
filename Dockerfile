@@ -6,7 +6,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1 
 
 # 3. 컨테이너 내부에서 코드가 작동할 폴더(작업 디렉토리) 생성 및 이동
-WORKDIR /app
+WORKDIR /app 
 
 # 4. 필수 패키지 설치를 위해 requirements.txt 복사 및 설치
 COPY requirements.txt /app/

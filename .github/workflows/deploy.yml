@@ -54,10 +54,10 @@ jobs:
           sudo docker rm my-app || true
           
           # ECR에서 최신 장고 이미지 다운로드
-          sudo docker pull 289707874895.dkr.ecr.ap-northeast-2.amazonaws.com/14thdeploysession:latest
+          sudo docker pull 289707874895.dkr.ecr.ap-northeast-2.amazonaws.com/14thdeployhw:latest
           
           # 도커 컨테이너 재가동!
-          sudo docker run -d -p 8000:8000 --name my-app 289707874895.dkr.ecr.ap-northeast-2.amazonaws.com/14thdeploysession:latest
+          sudo docker run -d -p 8000:8000 --name my-app 289707874895.dkr.ecr.ap-northeast-2.amazonaws.com/14thdeployhw:latest
           
           # 안 쓰는 쓰레기 이미지 정리 (용량 확보)
           sudo docker image prune -f 
